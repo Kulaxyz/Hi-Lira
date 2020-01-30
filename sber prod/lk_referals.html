@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Referrals</title>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="src/img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="src/css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+	<link rel="stylesheet" href="src/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="src/css/bootstrap-reboot.css.map">
+	<link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+	<!-- Site -->
+	<header class="header-lk header-wh">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header-sec__top-bar">
+						<a href="/lk_home.html" class="header-sec__top-bar--logo">
+							<img src="src/img/logo-bck.svg" alt="Logo">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center">
+					<a href="/lk_home.html" class="return">
+						<img src="src/img/lk-arr.svg" alt="arr">
+						<span>👋Bir arkadaşını davet et</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="ref-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="ref-content__descr">
+						Arkadaşlarınızı davet edin ve onlar sayesinde pasif gelir elde edin! <br> <br>
+
+						😎 Sevdiklerinizi finansal problemlerden ve bunlarla ilgili her şeyden kurtarın, çünkü sizin için kazanan ilk yapay zekayı yarattık. <br> <br>
+
+						Arkadaşlarınızın her yükleme miktarının% 1'ini alacaksınız. <br> <br>
+
+						Sevk programı sınırsızdır, davetiyelerde sınır yoktur ve anında harekete geçmeye başlar. <br> <br>
+
+						Yüksek sonuçlar elde etmek için, hedef kitle arayışına dikkatlice yaklaşın: sadece bizimle ilgilenecekleri çekin. <br> <br>
+
+						Kullanıcıları davet etmek için benzersiz bir yönlendirme bağlantısı kullanın.
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="ref-content__title">
+						Bağlantısı
+					</div>
+					<button class="ref-content__link" onclick="CopyToClipboard('referral')">
+						<div id="referral">https://lira.pw/?ref=hsduashj</div>
+						<img src="src/img/copy.svg" alt="copy">
+					</button>
+					<div class="ref-content__title">
+						Kazançlarınız
+					</div>
+					<div class="ref-content__balance">
+						0.00 ₺.
+					</div>
+				</div>
+				<div class="col-12 d-flex justify-content-center">
+					<div class="ref-content__cols">
+						<div class="ref-content__cols--item">
+							<div class="ref-content__cols--title">Tüm Arkadaşlar:</div>
+							<div class="ref-content__cols--total">0</div>
+						</div>
+						<div class="ref-content__cols--item">
+							<div class="ref-content__cols--title">Aktif Arkadaşlar:</div>
+							<div class="ref-content__cols--total">0</div>
+						</div>
+						<div class="ref-content__cols--item">
+							<div class="ref-content__cols--title">Etkin Olmayan Arkadaşlar:</div>
+							<div class="ref-content__cols--total">0</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+
+
+
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+	<script src="src/js/wow.min.js"></script>
+	<script src="src/js/script.js"></script>
+	<script>
+		function CopyToClipboard(containerid) {
+		if (document.selection) { 
+			var range = document.body.createTextRange();
+			range.moveToElementText(document.getElementById(containerid));
+			range.select().createTextRange();
+			document.execCommand("Copy"); 
+
+		} else if (window.getSelection) {
+			var range = document.createRange();
+			range.selectNode(document.getElementById(containerid));
+			window.getSelection().addRange(range);
+			document.execCommand("Copy");
+			alert('Link copied')
+		}}
+	</script>
+</body>
+</html>
